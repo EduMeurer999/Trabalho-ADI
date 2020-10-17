@@ -6,8 +6,20 @@ $(document).ready(function() {
             height: '150px',
             width: '150px'
         });
+    });
+    $(".nav-item").click((ev) => {
+        $(".nav-item").removeClass("active");
+        ev.currentTarget.className += " active";
+        let id = ev.currentTarget.id.split("-")[1];
+        $(`div.container`).css({display: "none"});
+        $(`div#${id}`).css({display: "block"});
+
+    });
+    $("button").click(()=>{
+        let element = $("iframe");
+        element.css({display: "block"});
     })
-    $("nav-item").click((ev) => {
-        console.log(ev);
-    })
+
 });
+
+
