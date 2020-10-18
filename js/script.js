@@ -18,7 +18,7 @@ $(document).ready(function() {
     $("button").click(()=>{
         let element = $("iframe");
         element.css({display: "block"});
-    })
+   })
 
 });
 
