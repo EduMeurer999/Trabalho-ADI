@@ -1,0 +1,21 @@
+.navbar {
+    background-color: #12AAFF !important;
+}
+
+.navbar-toggler {
+    background-color: #8de4df;
+    border: 1px solid black !important;
+}
+.container{
+    display: none
+}
+.container#historia{
+    display: block;
+}
+pre{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.navbar{
+    margin-bottom: 50px;
+}

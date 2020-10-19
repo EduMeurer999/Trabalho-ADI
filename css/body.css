@@ -1,0 +1,40 @@
+body{
+    background-color: rgba(41, 161, 231, 0.432)
+   }
+   div.gallery {
+   border: 3px solid hsl(189, 71%, 45%);
+     }
+   
+   div.gallery:hover {
+   border: 2.4px solid hsl(189, 84%, 45%);
+     }
+     
+   div.gallery img {
+   width: 100%;
+   height: auto;
+     }
+   
+   div.desc {
+   padding: 0.1px;
+   text-align: center;
+   }
+   /* Precisa revisr isso que está comentado
+   box-sizing border-box;Result Size: 457 x 300{
+   
+   }
+       width: 25.9999999%;
+       margin: 6px 0;{
+   }
+   */
+   @media only screen and (max-width: 500px) {
+     .responsive {
+       width: 100%;
+     }
+   }
+   ​
+   .clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   
