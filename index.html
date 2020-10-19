@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <img src="Logo jQuery/Logo jQuery.png" alt="Trulli" width="auto" height="100px" styleleft="center">
-    
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">jQuery</a>
+        <img src="img/logo-jquery.png" alt="Trulli" width="auto" height="50px" styleleft="center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active" id="link-historia">
-                    <a class="nav-link"  href="#">História <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">História <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item" id="link-recursos">
-                    <a class="nav-link"  href="#">Recursos</a>
+                    <a class="nav-link" href="#">Recursos</a>
                 </li>
                 <li class="nav-item" id="link-vantages">
-                    <a class="nav-link"  href="#">Vantagens</a>
+                    <a class="nav-link" href="#">Vantagens</a>
                 </li>
             </ul>
         </div>
@@ -39,9 +39,12 @@
     <div id="vantages" class="container">
         <div class="col-md-12">
             <h3>Vantagens</h3>
-                <p class="text-center"> 
-                Essa biblioteca é capaz de produzir efeitos impressionantes com pouca codificação e, com mais e mais integração com HTML5, será uma grande parte do futuro do desenvolvimento da Web.
-                <br>Se o seu objetivo é criar um site ou aplicativo da Web envolvente e interativo, o jQuery é uma ferramenta necessária para o seu  aprendizado. E para te convencer de uma vez por todas, listamos aqui algumas das diversas vantagens de utilizar essa biblioteca.
+            <p class="text-center">
+                Essa biblioteca é capaz de produzir efeitos impressionantes com pouca codificação e, com mais e mais
+                integração com HTML5, será uma grande parte do futuro do desenvolvimento da Web.
+                <br>Se o seu objetivo é criar um site ou aplicativo da Web envolvente e interativo, o jQuery é uma
+                ferramenta necessária para o seu aprendizado. E para te convencer de uma vez por todas, listamos aqui
+                algumas das diversas vantagens de utilizar essa biblioteca.
                 <br>- jQuery promove simplicidade
                 <br>- Os elementos do jQuery são exibidos mesmo quando o JavaScript está desabilitado
                 <br>-O jQuery integra-se facilmente ao IDE do Visual Studio
@@ -50,11 +53,19 @@
                 <br>- jQuery pode ser SEO amigável
             <p></p>
         </div>
+        <div class="text-center">
+            <h3>Vídeo de introdução ao jQuery</h3>
+            <iframe width="730" height="411" src="https://www.youtube.com/embed/z84ghbwX3Eg" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
     </div>
     <div id="recursos" class="container">
         <div class="col-md-12">
             <h2>Recursos</h2>
-            Com jQuery é possível fazer diversos efeitos com poucas linhas e, que custam dezenas de linhas em JavaScript puro.<br>
+            Com jQuery é possível fazer diversos efeitos com poucas linhas e, que custam dezenas de linhas em JavaScript
+            puro.<br>
             Alguns recursos oferecidos facilmente pelo. <br>
             jQuery são:<br>
             1) Seleção e manipulação de elementos HTML.<br>
@@ -65,30 +76,118 @@
             6) Eventos. <br>
             <p></p>
         </div>
+        <hr>
+        <div>
+            <h4>Obtendo a referência de um elemento na DOM através do Id</h4>
+            <h5>JavaScript</h5>
+            <pre>
+                <code>
+                    document.getElementById("elemento");
+                </code>
+            </pre>
+            <h5>jQuery</h5>
+            <pre>
+                <code>
+                    $("#elemento");
+                </code>
+            </pre>
+        </div>
+        <hr>
+        <div>
+            <h4>Obtendo o elemento através da classe</h4>
+            <h5>JavaScript</h5>
+            <pre>
+                <code>
+                    document.getElementsByClassName("classe");
+                </code>
+            </pre>
+            <h5>jQuery</h5>
+            <pre>
+                <code>
+                    $(".classe")
+                </code>
+            </pre>
+        </div>
+        <hr>
+        <div>
+            <h4>Obtendo o elemento através da tag</h4>
+            <h5>JavaScript</h5>
+            <pre>
+                <code>
+                    document.getElementsByTagName("body");
+                </code>
+            </pre>
+            <h5>jQuery</h5>
+            <pre>
+                <code>
+                    $("body")
+                </code>
+            </pre>
+        </div>
+        <hr>
+        <div>
+            <h4>Adicionar evento de clique no elemento</h4>
+            <h5>JavaScript</h5>
+            <pre>
+                <code>  
+                document.getElementById("elemento").addEventListener("click", (ev)=>{
+                    //função executada quando o elemento recebe um clique;
+                })
+                </code>
+            </pre>
+            <h5>jQuery</h5>
+            <pre>
+                <code>
+                    $("#elemento").click((e)=>{
+                        //função executada quando o elemento recebe um clique;
+                    })
+                </code>
+            </pre>
+            <pre>
+                <code>
+                    $("#elemento").on("click", (e)=>{
+                        //função executada quando o elemento recebe um clique;
+                    });
+                </code>
+            </pre>
+
+        </div>
     </div>
     <div id="historia" class="container">
         <div class="col-md-12">
             <h1>História</h1>
-            <p class="text-center"> 
-                jQuery é uma biblioteca JavaScript, <br>que interage com o HTML, desenvolvida para simplificar os scripts, interpretados no navegador do usuário, e a facilitar, a vida do programador, e assim dar, um melhor resultado, para o nosso cliente final (client-side). Criada em dezembro de 2006 no BarCamp de Nova York por John Resig. Usada por cerca de 77% dos 10 mil sites mais visitados do mundo, jQuery é a mais popular das bibliotecas JavaScript.
-                jQuery é uma biblioteca de código aberto e possui licença dual, fazendo uso da Licença MIT ou da GNU. A sintaxe do jQuery foi desenvolvida para simplificar a navegação em documentos HTML, a seleção de elementos DOM, criar animações, manipular eventos, desenvolver aplicações AJAX e criação de plugins sobre ela. Permitindo aos desenvolvedores criarem camadas de abstração para interações de baixo nível de modo simplificado em aplicações web de grande complexidade.
-                A jQuery é leve, seu tamanho é em torno de 30kb, oferece suporte a plug-ins e também conta com uma grande equipe de desenvolvedores que vem diariamente adicionando novos recursos e funções para essa biblioteca, nos disponibilizando uma grande quantidade de controles para interface.
-                <div id="Recursos" class="container">
-                    <div class="col-md-12">
-                <h2>Recursos Oferecidos</h2>
-                <p class="text-center"> 
-                 <div id="Vantagens" class="container">
-                    <div class="col-md-12">
+            <p class="text-center">
+                jQuery é uma biblioteca JavaScript, <br>que interage com o HTML, desenvolvida para simplificar os
+                scripts, interpretados no navegador do usuário, e a facilitar, a vida do programador, e assim dar, um
+                melhor resultado, para o nosso cliente final (client-side). Criada em dezembro de 2006 no BarCamp de
+                Nova York por John Resig. Usada por cerca de 77% dos 10 mil sites mais visitados do mundo, jQuery é a
+                mais popular das bibliotecas JavaScript.
+                jQuery é uma biblioteca de código aberto e possui licença dual, fazendo uso da Licença MIT ou da GNU. A
+                sintaxe do jQuery foi desenvolvida para simplificar a navegação em documentos HTML, a seleção de
+                elementos DOM, criar animações, manipular eventos, desenvolver aplicações AJAX e criação de plugins
+                sobre ela. Permitindo aos desenvolvedores criarem camadas de abstração para interações de baixo nível de
+                modo simplificado em aplicações web de grande complexidade.
+                A jQuery é leve, seu tamanho é em torno de 30kb, oferece suporte a plug-ins e também conta com uma
+                grande equipe de desenvolvedores que vem diariamente adicionando novos recursos e funções para essa
+                biblioteca, nos disponibilizando uma grande quantidade de controles para interface.
+            <div id="Recursos" class="container">
+                <div class="col-md-12">
+                    <h2>Recursos Oferecidos</h2>
+                    <p class="text-center">
+                    <div id="Vantagens" class="container">
+                        <div class="col-md-12">
+                        </div>
+                        </p>
+                        <button>Abrir Vídeo</button>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/eS7I3GTmfbk" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-            </p>
-            <button>Abrir Vídeo</button>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/eS7I3GTmfbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
+                </div>
 
 
 
-    <script src="js/script.js"></script>
+                <script src="js/script.js"></script>
 </body>
 
 </html>
