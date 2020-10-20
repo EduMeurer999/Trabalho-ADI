@@ -6,16 +6,27 @@
     background-color: #8de4df;
     border: 1px solid black !important;
 }
-.container{
+
+.align-center {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
     display: none
 }
-.container#historia{
+
+.container#historia {
     display: block;
 }
-pre{
+
+pre {
     border-radius: 10px;
     background-color: #FFFFFF;
 }
-.navbar{
+
+.navbar {
     margin-bottom: 50px;
 }
